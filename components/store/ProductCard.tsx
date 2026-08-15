@@ -25,13 +25,20 @@ export default function ProductCard({
 
   const sizes = Array.from(new Set(product.variants?.map((v: any) => v.size) || ["S", "M", "L", "XL"]))
   
+  const totalStock = product.variants ? product.variants.reduce((sum: number, v: any) => sum + (v.stock || 0), 0) : null
+  const isOutOfStock = totalStock === 0
+  
   return (
     <div className="bg-bindu-white border border-bindu-border-grey rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 relative group flex flex-col h-full">
-      {hasSale && (
+      {isOutOfStock ? (
+        <div className="absolute top-3 left-3 bg-bindu-text-muted text-white text-xs font-black px-2 py-1 rounded z-10">
+          SOLD OUT
+        </div>
+      ) : hasSale ? (
         <div className="absolute top-3 left-3 bg-bindu-red text-white text-xs font-black px-2 py-1 rounded z-10">
           SALE
         </div>
-      )}
+      ) : null}
       <div className="absolute top-3 right-3 bg-bindu-navy/80 text-white text-[10px] font-bold px-2 py-1 rounded z-10 uppercase tracking-wider backdrop-blur">
         {product.category?.name || "POLO"}
       </div>
@@ -81,8 +88,12 @@ export default function ProductCard({
              </div>
           </div>
           
-          <button className="w-full bg-bindu-navy text-white font-bold py-3 rounded text-sm hover:bg-bindu-orange transition-colors uppercase tracking-wide">
-            Add to Bag
+          <button 
+            disabled={isOutOfStock}
+            className={`w-full font-bold py-3 rounded text-sm transition-colors uppercase tracking-wide
+              ${isOutOfStock ? "bg-bindu-light-grey text-bindu-text-muted cursor-not-allowed border border-bindu-border-grey" : "bg-bindu-navy text-white hover:bg-bindu-orange"}`}
+          >
+            {isOutOfStock ? "Sold Out" : "Add to Bag"}
           </button>
         </div>
       </div>

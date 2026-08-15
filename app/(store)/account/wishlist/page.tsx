@@ -4,9 +4,22 @@ import { useWishlistStore } from "@/store/useWishlistStore"
 import ProductCard from "@/components/store/ProductCard"
 import { Heart } from "lucide-react"
 import Link from "next/link"
+import { useEffect, useState } from "react"
+import { getWishlistProducts } from "./actions"
 
 export default function WishlistPage() {
   const { items } = useWishlistStore()
+  const [liveItems, setLiveItems] = useState<any[]>([])
+
+  useEffect(() => {
+    if (!items.length) {
+      setLiveItems([])
+      return
+    }
+    getWishlistProducts(items.map(i => i.id)).then(setLiveItems).catch(() => {})
+  }, [items])
+
+  const displayItems = liveItems.length > 0 ? liveItems : items
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-12 min-h-[60vh]">
@@ -15,7 +28,7 @@ export default function WishlistPage() {
         My Wishlist
       </h1>
 
-      {items.length === 0 ? (
+      {displayItems.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-center bg-bindu-light-grey rounded-none border border-bindu-border-grey">
           <Heart className="w-16 h-16 text-bindu-text-muted mb-4" />
           <h2 className="text-2xl font-heading font-bold text-bindu-navy mb-2">Your wishlist is empty</h2>
@@ -28,7 +41,7 @@ export default function WishlistPage() {
         </div>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {items.map((item) => (
+          {displayItems.map((item) => (
             <ProductCard
               key={item.id}
               product={{
@@ -37,8 +50,9 @@ export default function WishlistPage() {
                 slug: item.slug,
                 price: item.price,
                 comparePrice: item.comparePrice,
-                category: { name: item.category },
-                images: [{ url: item.image }]
+                category: typeof item.category === 'string' ? { name: item.category } : item.category,
+                images: item.images ? item.images : [{ url: item.image }],
+                variants: item.variants
               }}
             />
           ))}

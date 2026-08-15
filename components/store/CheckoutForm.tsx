@@ -120,6 +120,16 @@ export default function CheckoutForm({
   const { items, clearCart, appliedCoupon: storeCoupon, setAppliedCoupon: setStoreCoupon } = useCartStore()
   const router = useRouter()
   const [loading, setLoading] = useState(false)
+  const [stockIssues, setStockIssues] = useState<string[]>([])
+
+  useEffect(() => {
+    if (!items.length) return
+    import("@/app/(store)/checkout/actions").then(m => {
+      m.validateCartStock(items.map(i => ({ variantId: i.variantId, quantity: i.quantity, name: i.name, size: i.size })))
+       .then(setStockIssues)
+       .catch(() => {})
+    })
+  }, [items])
 
   // ── Accordion state ──
   const [activeStep, setActiveStep] = useState(1)
@@ -692,9 +702,28 @@ export default function CheckoutForm({
             )}
           </div>
 
+          {/* Stock Issues */}
+          {stockIssues.length > 0 && (
+            <div className="bg-bindu-red/10 border border-bindu-red/20 p-4 text-bindu-red space-y-2 mb-4">
+              <p className="font-bold text-sm">Please update your cart to continue:</p>
+              <ul className="list-disc pl-5 text-xs">
+                {stockIssues.map((issue, i) => (
+                  <li key={i}>{issue}</li>
+                ))}
+              </ul>
+              <button 
+                type="button"
+                onClick={() => router.push("/cart")} 
+                className="mt-2 text-xs font-bold underline hover:text-bindu-navy"
+              >
+                Return to Cart
+              </button>
+            </div>
+          )}
+
           {/* Place order CTA */}
-          <button onClick={handlePlaceOrder} disabled={loading}
-            className="rounded-none shadow-md w-full py-5 bg-bindu-navy text-bindu-white font-black uppercase tracking-widest flex items-center justify-center gap-3 hover:opacity-90 transition-colors text-xs disabled:opacity-60">
+          <button onClick={handlePlaceOrder} disabled={loading || stockIssues.length > 0}
+            className="rounded-none shadow-md w-full py-5 bg-bindu-navy text-bindu-white font-black uppercase tracking-widest flex items-center justify-center gap-3 hover:opacity-90 transition-colors text-xs disabled:opacity-60 disabled:cursor-not-allowed">
             {loading
               ? <><Loader2 className="w-4 h-4 animate-spin" /> Processing securely...</>
               : "Confirm & Place Order →"
