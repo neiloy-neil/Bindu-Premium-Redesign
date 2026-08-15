@@ -229,7 +229,6 @@ export default async function OrderConfirmationPage({
 
   // ── Regular order confirmation ────────────────────────────────────────────
   return (
-  return (
     <div className="bg-bindu-light-grey min-h-screen animate-in fade-in duration-500">
       <div className="container mx-auto px-4 py-16 md:py-24 max-w-5xl">
 

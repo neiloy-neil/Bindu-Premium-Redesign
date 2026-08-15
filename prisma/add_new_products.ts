@@ -13,7 +13,7 @@ const prisma = new PrismaClient({ adapter })
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const generateSlug = (name) => {
+const generateSlug = (name: string) => {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + Math.floor(Math.random() * 10000)
 }
 
@@ -22,12 +22,12 @@ async function main() {
 
   // Fetch categories to map properly
   const categories = await prisma.category.findMany()
-  const catMap = {}
+  const catMap: Record<string, string> = {}
   categories.forEach(c => {
     catMap[c.name.toLowerCase()] = c.id
   })
 
-  const getCategoryId = (name) => {
+  const getCategoryId = (name: string) => {
     return catMap[name.toLowerCase()] || categories[0].id
   }
 

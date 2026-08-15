@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = 'd:/AI/Bindu-Premium-Redesign/bindu/TASKLIST.md — Bindu Premium Website.md';
+const path = 'd:/AI/Bindu-Premium-Redesign/TASKLIST.md — Bindu Premium Website.md';
 
 let content = fs.readFileSync(path, 'utf8');
 

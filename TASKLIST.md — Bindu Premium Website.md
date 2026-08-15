@@ -485,7 +485,7 @@ Route:
 - [x] Short description.
 - [x] Color selector.
 - [x] Size selector.
-- [x] Stock.status.
+- [ ] Stock.status.
 - [x] Quantity.
 - [x] Add to cart.
 - [x] Buy now.
@@ -657,7 +657,7 @@ Potential methods:
 - [x] Phone validation.
 - [x] Address validation.
 - [x] Payment errors.
-- [x] Stock.validation.
+- [ ] Stock.validation.
 - [x] Order failure state.
 
 ---
@@ -766,7 +766,7 @@ Routes:
 - [x] Add product.
 - [x] Remove product.
 - [x] Add to cart.
-- [x] Stock.status.
+- [ ] Stock.status.
 - [x] Guest local-storage wishlist.
 - [x] Logged-in synced wishlist.
 - [x] Empty state.
