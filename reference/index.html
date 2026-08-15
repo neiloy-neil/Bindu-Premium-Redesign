@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bindu Premium Redesign - High-converting premium fashion e-commerce storefront for Polo shirts, Brazil 2026 Jerseys, and Men's Sportswear. Cash on Delivery all over Bangladesh.">
+  <title>Bindu Premium | Export Quality Menswear & Luxury Sportswear Bangladesh</title>
+  <link rel="stylesheet" href="style.css?v=3.0">
+</head>
+<body>
+
+  <!-- ==========================================
+       TOAST NOTIFICATION CONTAINER
+       ========================================== -->
+  <div id="toast-notification-container" class="toast-container"></div>
+
+  <!-- ==========================================
+       PROMO / ANNOUNCEMENT BAR
+       ========================================== -->
+  <div class="promo-bar">
+    <span>🔥 FLASH SALE LIVE! Flat 50% OFF on Selected Polo. Cash on Delivery Bangladesh.</span>
+    <span class="highlight">FREE shipping on orders over ৳2000!</span>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="navbar-wrapper">
+    <div class="container navbar">
+      <!-- Brand Logo Left -->
+      <a href="#" class="brand-logo">
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: var(--primary-navy); border-radius: 4px; padding: 5px;">
+          <path d="M12 8H20C23.5 8 26 10 26 13C26 15 24.5 16.5 22.5 17C25 17.5 27 19.5 27 23C27 26.5 24 29 20 29H12V8ZM17 12V16.5H19.5C21 16.5 22 15.5 22 14.25C22 13 21 12 19.5 12H17ZM17 20.5V25H20.5C22 25 23 24 23 22.75C23 21.5 22 20.5 20.5 20.5H17Z" fill="white" stroke="white" stroke-width="1.5"/>
+        </svg>
+        <span class="brand-text">BINDU<span>PREMIUM</span></span>
+      </a>
+
+      <!-- Menu Items Center -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#products-grid-section" class="nav-link">Shop</a></li>
+        <li><a href="#products-grid-section" class="nav-link">Polo</a></li>
+        <li><a href="#products-grid-section" class="nav-link">Jerseys</a></li>
+        <li><a href="#flash-sale-section" class="nav-link">Flash Sale</a></li>
+        <li><a href="#size-guide-section" class="nav-link">Size Guide</a></li>
+        <li><a href="#reviews-section" class="nav-link">Reviews</a></li>
+        <li><a href="#footer-section" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Icons Right -->
+      <div class="nav-actions">
+        <a href="#products-grid-section" class="nav-action-btn" aria-label="Search Catalog">🔍</a>
+        <button id="cart-toggle-btn" class="nav-action-btn" aria-label="Shopping Cart" style="position: relative;">
+          🛒
+          <span class="cart-badge" id="cart-badge-count" style="display: none;">0</span>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <!-- Left text side -->
+      <div class="hero-content">
+        <div class="hero-tagline">
+          ⚡ Export Quality & Comfort
+        </div>
+        <h1 class="hero-title">
+          PREMIUM LOOK.<br>
+          <span>BETTER FITS.</span>
+        </h1>
+        <p class="hero-desc">
+          Export Quality Menswear Designed for Comfort & Confidence. Feel the luxury of premium combed cotton fabrics crafted for the active Bangladeshi lifestyle.
+        </p>
+        <div class="hero-ctas">
+          <a href="#products-grid-section" class="btn-primary">Shop Now</a>
+          <a href="#products-grid-section" class="btn-secondary">View Collection</a>
+        </div>
+      </div>
+
+      <!-- Right image side -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero_model.png" alt="Premium Sports Fashion Model Wearing Bindu Polo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FLASH SALE SECTION
+       ========================================== -->
+  <section class="flash-sale" id="flash-sale-section">
+    <div class="container">
+      <div class="flash-header-card">
+        <div class="flash-title-wrapper">
+          <div class="flash-badge">Flash Sale 🔥</div>
+          <h2 class="flash-headline">Flat 50% OFF On Selected Polo</h2>
+          <span class="flash-tagline">Offer দিয়ে দিলাম, রাগ করলা? 😉</span>
+        </div>
+
+        <!-- Live countdown clock -->
+        <div class="countdown-wrapper">
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-days">02</div>
+            <div class="countdown-lbl">Days</div>
+          </div>
+          <div class="countdown-divider">:</div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-hours">00</div>
+            <div class="countdown-lbl">Hours</div>
+          </div>
+          <div class="countdown-divider">:</div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-mins">00</div>
+            <div class="countdown-lbl">Mins</div>
+          </div>
+          <div class="countdown-divider">:</div>
+          <div class="countdown-box">
+            <div class="countdown-num" id="cd-secs">00</div>
+            <div class="countdown-lbl">Secs</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flash sale product cards -->
+      <div class="flash-products-slider">
+        <!-- Polo Card 1 (Navy) -->
+        <div class="product-card">
+          <div class="card-sale-badge">50% OFF</div>
+          <div class="card-category-badge">POLO</div>
+          <div class="product-image-container">
+            <img src="assets/navy_polo.png" alt="Bindu Premium Polo - Navy Blue">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">(124)</span>
+            </div>
+            <h3 class="product-title">Bindu Premium Solid Polo Shirt - Navy Blue</h3>
+            
+            <div class="calc-input-wrapper" style="margin-top: 10px; margin-bottom: 12px;">
+              <select id="size-select-1" class="form-input" style="width:100%; font-weight:700; padding:8px 12px; background:#F9FAFB; border-color:#E5E7EB;">
+                <option value="M">Select Size: M (Chest 38")</option>
+                <option value="L">Select Size: L (Chest 40")</option>
+                <option value="XL">Select Size: XL (Chest 42")</option>
+                <option value="XXL">Select Size: XXL (Chest 44")</option>
+                <option value="3XL">Select Size: 3XL (Chest 46")</option>
+                <option value="S">Select Size: S (Chest 36")</option>
+              </select>
+            </div>
+
+            <div class="product-pricing">
+              <span class="price-offer">৳690</span>
+              <span class="price-regular">৳790</span>
+            </div>
+            <button class="product-action-btn" onclick="addToCart(1, 'Bindu Premium Solid Polo - Navy Blue', 690, 'assets/navy_polo.png', 'polo')">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Polo Card 2 (Stripe Orange) -->
+        <div class="product-card">
+          <div class="card-sale-badge">50% OFF</div>
+          <div class="card-category-badge">STRIPE POLO</div>
+          <div class="product-image-container">
+            <img src="assets/stripe_polo.png" alt="Bindu Premium Stripe Polo - Bright Orange">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">(98)</span>
+            </div>
+            <h3 class="product-title">Bindu Premium Stripe Polo Shirt - Sporty Orange</h3>
+            
+            <div class="calc-input-wrapper" style="margin-top: 10px; margin-bottom: 12px;">
+              <select id="size-select-2" class="form-input" style="width:100%; font-weight:700; padding:8px 12px; background:#F9FAFB; border-color:#E5E7EB;">
+                <option value="M">Select Size: M (Chest 38")</option>
+                <option value="L">Select Size: L (Chest 40")</option>
+                <option value="XL">Select Size: XL (Chest 42")</option>
+                <option value="XXL">Select Size: XXL (Chest 44")</option>
+                <option value="3XL">Select Size: 3XL (Chest 46")</option>
+                <option value="S">Select Size: S (Chest 36")</option>
+              </select>
+            </div>
+
+            <div class="product-pricing">
+              <span class="price-offer">৳690</span>
+              <span class="price-regular">৳790</span>
+            </div>
+            <button class="product-action-btn" onclick="addToCart(2, 'Bindu Premium Stripe Polo - Sporty Orange', 690, 'assets/stripe_polo.png', 'stripe')">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURED PRODUCTS (CATALOG GRID)
+       ========================================== -->
+  <section class="featured-section" id="products-grid-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Premium Collections</span>
+        <h2 class="section-title">High-Converting Men's Fashion</h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Collection</button>
+        <button class="filter-btn" data-filter="polo">Solid Polos</button>
+        <button class="filter-btn" data-filter="stripe">Stripe Polos</button>
+        <button class="filter-btn" data-filter="jersey">Brazil Jerseys</button>
+        <button class="filter-btn" data-filter="tshirt">Minimal T-Shirts</button>
+      </div>
+
+      <!-- Core products grid -->
+      <div class="products-grid">
+        <!-- Product 1 (Navy Solid) -->
+        <div class="product-card product-card-item" data-category="polo">
+          <div class="card-sale-badge">SALE</div>
+          <div class="card-category-badge">POLO</div>
+          <div class="product-image-container">
+            <img src="assets/navy_polo.png" alt="Bindu Premium Polo - Navy Blue">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">(124)</span>
+            </div>
+            <h3 class="product-title">Bindu Premium Solid Polo Shirt - Navy Blue</h3>
+            
+            <div class="calc-input-wrapper" style="margin-top: 10px; margin-bottom: 12px;">
+              <select id="size-select-1-grid" class="form-input" style="width:100%; font-weight:700; padding:8px 12px; background:#F9FAFB; border-color:#E5E7EB;">
+                <option value="M">Select Size: M (Chest 38")</option>
+                <option value="L">Select Size: L (Chest 40")</option>
+                <option value="XL">Select Size: XL (Chest 42")</option>
+                <option value="XXL">Select Size: XXL (Chest 44")</option>
+                <option value="3XL">Select Size: 3XL (Chest 46")</option>
+                <option value="S">Select Size: S (Chest 36")</option>
+              </select>
+            </div>
+
+            <div class="product-pricing">
+              <span class="price-offer">৳690</span>
+              <span class="price-regular">৳790</span>
+            </div>
+            <button class="product-action-btn" onclick="addToCart(1, 'Bindu Premium Solid Polo - Navy Blue', 690, 'assets/navy_polo.png', 'polo')">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product 2 (Stripe Orange) -->
+        <div class="product-card product-card-item" data-category="stripe">
+          <div class="card-sale-badge">SALE</div>
+          <div class="card-category-badge">STRIPE POLO</div>
+          <div class="product-image-container">
+            <img src="assets/stripe_polo.png" alt="Bindu Premium Stripe Polo - Sporty Orange">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">(98)</span>
+            </div>
+            <h3 class="product-title">Bindu Premium Stripe Polo Shirt - Sporty Orange</h3>
+            
+            <div class="calc-input-wrapper" style="margin-top: 10px; margin-bottom: 12px;">
+              <select id="size-select-2-grid" class="form-input" style="width:100%; font-weight:700; padding:8px 12px; background:#F9FAFB; border-color:#E5E7EB;">
+                <option value="M">Select Size: M (Chest 38")</option>
+                <option value="L">Select Size: L (Chest 40")</option>
+                <option value="XL">Select Size: XL (Chest 42")</option>
+                <option value="XXL">Select Size: XXL (Chest 44")</option>
+                <option value="3XL">Select Size: 3XL (Chest 46")</option>
+                <option value="S">Select Size: S (Chest 36")</option>
+              </select>
+            </div>
+
+            <div class="product-pricing">
+              <span class="price-offer">৳690</span>
+              <span class="price-regular">৳790</span>
+            </div>
+            <button class="product-action-btn" onclick="addToCart(2, 'Bindu Premium Stripe Polo - Sporty Orange', 690, 'assets/stripe_polo.png', 'stripe')">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product 3 (Brazil Jersey) -->
+        <div class="product-card product-card-item" data-category="jersey">
+          <div class="card-sale-badge" style="background-color:#28A745;">POPULAR</div>
+          <div class="card-category-badge">JERSEY</div>
+          <div class="product-image-container">
+            <img src="assets/brazil_jersey.png" alt="Brazil 2026 Premium Jersey - Yellow Green">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">(240)</span>
+            </div>
+            <h3 class="product-title">Brazil 2026 Jersey Collection - Football Edition</h3>
+            
+            <div class="calc-input-wrapper" style="margin-top: 10px; margin-bottom: 12px;">
+              <select id="size-select-3-grid" class="form-input" style="width:100%; font-weight:700; padding:8px 12px; background:#F9FAFB; border-color:#E5E7EB;">
+                <option value="M">Select Size: M (Chest 38")</option>
+                <option value="L">Select Size: L (Chest 40")</option>
+                <option value="XL">Select Size: XL (Chest 42")</option>
+                <option value="XXL">Select Size: XXL (Chest 44")</option>
+                <option value="S">Select Size: S (Chest 36")</option>
+              </select>
+            </div>
+
+            <div class="product-pricing">
+              <span class="price-offer">৳990</span>
+              <span class="price-regular">৳1,290</span>
+            </div>
+            <button class="product-action-btn" onclick="addToCart(3, 'Brazil 2026 Jersey - Football Edition', 990, 'assets/brazil_jersey.png', 'jersey')">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product 4 (Black T-shirt) -->
+        <div class="product-card product-card-item" data-category="tshirt">
+          <div class="card-sale-badge">HOT</div>
+          <div class="card-category-badge">T-SHIRT</div>
+          <div class="product-image-container">
+            <img src="assets/premium_tshirt.png" alt="Bindu Premium T-Shirt - Pitch Black">
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="review-count">(64)</span>
+            </div>
+            <h3 class="product-title">Bindu Premium Minimal T-Shirt - Pitch Black</h3>
+            
+            <div class="calc-input-wrapper" style="margin-top: 10px; margin-bottom: 12px;">
+              <select id="size-select-4-grid" class="form-input" style="width:100%; font-weight:700; padding:8px 12px; background:#F9FAFB; border-color:#E5E7EB;">
+                <option value="M">Select Size: M (Chest 38")</option>
+                <option value="L">Select Size: L (Chest 40")</option>
+                <option value="XL">Select Size: XL (Chest 42")</option>
+                <option value="XXL">Select Size: XXL (Chest 44")</option>
+                <option value="S">Select Size: S (Chest 36")</option>
+              </select>
+            </div>
+
+            <div class="product-pricing">
+              <span class="price-offer">৳495</span>
+              <span class="price-regular">৳650</span>
+            </div>
+            <button class="product-action-btn" onclick="addToCart(4, 'Bindu Premium Minimal T-Shirt - Black', 495, 'assets/premium_tshirt.png', 'tshirt')">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WHY CHOOSE US (TRUST BADGES)
+       ========================================== -->
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Export Quality Fabric</h3>
+          <p>Made from combed organic cotton and durable breathable dry-fit components built to last.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Cash On Delivery</h3>
+          <p>Pay only after checking the package inside Bangladesh. 100% hassle-free local payments.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Fast Delivery</h3>
+          <p>Receive your orders in 24-48 hours inside Dhaka and 3-5 days across all districts.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Easy Exchange</h3>
+          <p>Facing fit issues? Return or swap sizes within 7 days with zero customer hassle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SIZE GUIDE SECTION
+       ========================================== -->
+  <section class="size-guide" id="size-guide-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Size Advisor</span>
+        <h2 class="section-title">Find Your Perfect Fit</h2>
+      </div>
+
+      <div class="size-guide-container">
+        <!-- Left Sizing Table -->
+        <div class="size-guide-visuals">
+          <div class="table-responsive">
+            <table class="size-table">
+              <thead>
+                <tr>
+                  <th>Size</th>
+                  <th class="highlight">Chest (Inches)</th>
+                  <th>Length (Inches)</th>
+                  <th>Shoulder (Inches)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>XS</td>
+                  <td>34" - 35"</td>
+                  <td>26"</td>
+                  <td>15.5"</td>
+                </tr>
+                <tr>
+                  <td>S</td>
+                  <td>36" - 37"</td>
+                  <td>27"</td>
+                  <td>16.5"</td>
+                </tr>
+                <tr>
+                  <td style="color: var(--accent-orange); font-weight:800;">M</td>
+                  <td style="font-weight: 800; color: var(--accent-orange);">38" - 39"</td>
+                  <td>28"</td>
+                  <td>17.5"</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>40" - 41"</td>
+                  <td>29"</td>
+                  <td>18.5"</td>
+                </tr>
+                <tr>
+                  <td>XL</td>
+                  <td>42" - 43"</td>
+                  <td>30"</td>
+                  <td>19.5"</td>
+                </tr>
+                <tr>
+                  <td>XXL</td>
+                  <td>44" - 45"</td>
+                  <td>31"</td>
+                  <td>20.5"</td>
+                </tr>
+                <tr>
+                  <td>3XL</td>
+                  <td>46" - 48"</td>
+                  <td>32"</td>
+                  <td>21.5"</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Right interactive sizing helper -->
+        <div class="size-calculator">
+          <h3>Sizing Assistant</h3>
+          <p>Type in your custom chest width to receive our official matching size recommendation instantly!</p>
+          
+          <div class="calc-input-wrapper">
+            <label for="calc-chest-input">Your Chest Width (Inches)</label>
+            <input type="number" id="calc-chest-input" class="calc-input" placeholder="e.g. 38" min="30" max="60">
+          </div>
+
+          <div id="calc-result-box" class="calc-result-box">
+            <div class="calc-result-title">Your Recommended Size:</div>
+            <div id="calc-result-value" class="calc-result-value">M</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CUSTOMER REVIEWS (TESTIMONIALS)
+       ========================================== -->
+  <section class="reviews" id="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Social Proof</span>
+        <h2 class="section-title">What Bangladeshi Buyers Say</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-name">Tariqul Islam</span>
+            <span class="review-verified">✓ Verified (Dhaka)</span>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"The fit of the polo is incredibly premium. Combed cotton feels so comfortable in this hot summer weather. Best quality in Bangladesh at this price range. Will order again!"</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-name">Sayeeda Khan</span>
+            <span class="review-verified">✓ Verified (Chittagong)</span>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Ordered the Brazil 2026 Jersey for my brother. The dry-fit fabric is amazing, exact same details as international sports brands. Fits him perfectly!"</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-name">Mahmudul Hasan</span>
+            <span class="review-verified">✓ Verified (Sylhet)</span>
+          </div>
+          <div class="review-rating">★★★★★</div>
+          <p class="review-text">"Extremely fast cash on delivery. Ordered yesterday and received today! Excellent customer service on WhatsApp. Premium packaging details as well."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SOCIAL PROOF MILITARY stats & CAMP FEED
+       ========================================== -->
+  <section class="social-proof">
+    <div class="container social-split">
+      <div class="stats-panel">
+        <div class="stat-item">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50,000+</div>
+          <div class="stat-label">Orders Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Trusted Brand in BD</div>
+        </div>
+      </div>
+
+      <div class="social-grid-wrapper">
+        <div class="social-feed-card">
+          <img src="assets/navy_polo.png" alt="Customer Feed Polo Show">
+        </div>
+        <div class="social-feed-card">
+          <img src="assets/brazil_jersey.png" alt="Customer Feed Jersey Show">
+        </div>
+        <div class="social-feed-card">
+          <img src="assets/stripe_polo.png" alt="Customer Feed Stripe Polo Show">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER SECTION
+       ========================================== -->
+  <footer class="footer" id="footer-section">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h3 style="color:var(--white);">Bindu Premium</h3>
+          <p class="footer-desc" style="margin-top:15px;">Inspired by global sportswear design, crafted for maximum comfort and style in Bangladesh. Your top destination for export quality polos & jerseys.</p>
+          <div class="social-icons-row">
+            <a href="https://facebook.com/bindufashionbd" target="_blank" class="social-icon-btn" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links" style="margin-top:15px;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products-grid-section">All Collections</a></li>
+            <li><a href="#flash-sale-section">Flash Sale</a></li>
+            <li><a href="#size-guide-section">Size Guide</a></li>
+            <li><a href="#reviews-section">Customer Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul class="footer-contact-list" style="margin-top:15px;">
+            <li>📍 Dhaka, Bangladesh</li>
+            <li>✉ support@bindupremium.com</li>
+            <li>📞 +880 172 555 6272</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p class="footer-desc" style="margin-top:15px; margin-bottom:15px;">Subscribe to receive premium discount updates & campaign arrivals!</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Bindu Premium. All Rights Reserved.</div>
+        <div class="payments-badge-row">
+          <span>COD Delivery BD:</span>
+          <div style="background:#E11D48; color:white; font-size:10px; font-weight:700; padding:4px 8px; border-radius:4px; display:inline-block; margin-right:5px;">bKash</div>
+          <div style="background:#EA580C; color:white; font-size:10px; font-weight:700; padding:4px 8px; border-radius:4px; display:inline-block; margin-right:5px;">Nagad</div>
+          <div style="background:#071B3B; color:white; font-size:10px; font-weight:700; padding:4px 8px; border-radius:4px; display:inline-block; border:1px solid rgba(255,255,255,0.2);">COD</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       CART SIDE SLIDE DRAWER
+       ========================================== -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h2>Your Shopping Cart</h2>
+        <button class="cart-drawer-close" id="cart-drawer-close">✕</button>
+      </div>
+
+      <div class="cart-items-list" id="cart-drawer-items"></div>
+
+      <div class="cart-drawer-footer">
+        <div class="shipping-meter-box">
+          <div class="shipping-meter-text" id="shipping-meter-text">
+            Shop for <span>৳2,000</span> more to get FREE shipping!
+          </div>
+          <div class="shipping-meter-bar">
+            <div class="shipping-meter-fill" id="shipping-meter-fill"></div>
+          </div>
+        </div>
+
+        <div class="cart-summary-row">
+          <span>Subtotal:</span>
+          <span class="cart-summary-total" id="cart-drawer-subtotal">৳0</span>
+        </div>
+        <button class="checkout-drawer-btn" id="checkout-drawer-btn">Proceed To Checkout ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       COD CHECKOUT FLOW MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="checkout-modal-overlay">
+    <div class="checkout-modal">
+      <div class="checkout-modal-header">
+        <h2>Complete Your COD Order</h2>
+        <button class="checkout-modal-close" id="checkout-modal-close">✕</button>
+      </div>
+
+      <div class="checkout-modal-body">
+        <form class="checkout-form" id="cod-checkout-form">
+          <div class="form-section-title">Delivery Details (Bangladesh)</div>
+          
+          <div class="form-group">
+            <label for="checkout-name">Full Name *</label>
+            <input type="text" id="checkout-name" name="customer_name" class="form-input" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="checkout-phone">Mobile Number *</label>
+            <input type="tel" id="checkout-phone" name="customer_phone" class="form-input" placeholder="e.g. 01712345678" required>
+          </div>
+
+          <div class="form-group">
+            <label for="checkout-address">Full Delivery Address *</label>
+            <input type="text" id="checkout-address" name="customer_address" class="form-input" placeholder="House/Road/Area, City/District" required>
+          </div>
+
+          <div class="form-group">
+            <label for="checkout-area">Delivery Zone *</label>
+            <select id="checkout-area" name="checkout_area" class="form-input" required>
+              <option value="inside">Inside Dhaka (৳60)</option>
+              <option value="outside">Outside Dhaka (৳120)</option>
+            </select>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:12px; margin-top:20px;">
+            <button type="submit" class="place-order-btn">Confirm Cash on Delivery Order ➔</button>
+            <button type="button" class="place-order-btn" id="whatsapp-order-btn" style="background:#25D366; color:white;">
+              Order via WhatsApp
+            </button>
+          </div>
+        </form>
+
+        <!-- Success Screen inside body -->
+        <div class="order-success-screen" id="checkout-success-screen">
+          <div class="success-icon">✓</div>
+          <h3>Order Placed Successfully!</h3>
+          <p>Thank you, <strong id="success-customer-name">Customer</strong>! Your cash on delivery order has been received.</p>
+          
+          <div style="background:var(--light-grey); border:1px solid var(--border-grey); border-radius:8px; padding:15px; text-align:left; font-size:13px; margin-bottom: 25px;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span>Order Reference ID:</span>
+              <strong id="success-order-id" style="color:var(--accent-orange);">BP-000000</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span>Total Payable Amount:</span>
+              <strong id="success-total">৳0</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between;">
+              <span>Payment Method:</span>
+              <strong>Cash on Delivery (COD)</strong>
+            </div>
+          </div>
+
+          <button class="btn-primary" onclick="closeCheckoutModal();" style="width:100%; display:block;">Continue Shopping</button>
+        </div>
+
+        <!-- Right: Order Invoice Details -->
+        <div class="order-summary-box">
+          <div class="order-summary-title">Your Order Summary</div>
+          <div class="summary-items-list" id="checkout-summary-items"></div>
+
+          <div class="invoice-pricing-list">
+            <div class="invoice-row">
+              <span>Subtotal:</span>
+              <span id="invoice-subtotal">৳0</span>
+            </div>
+            <div class="invoice-row">
+              <span>Delivery Charge:</span>
+              <span id="invoice-shipping">৳60</span>
+            </div>
+            <div class="invoice-row invoice-total-row">
+              <span>Total Payable:</span>
+              <span id="invoice-total">৳0</span>
+            </div>
+          </div>
+
+          <div class="cod-badge-banner">
+            🛡️ CASH ON DELIVERY GUARANTEED
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SUPPORT & STICKY FOOTER ACTION
+       ========================================== -->
+  <!-- WhatsApp Floating Icon -->
+  <a href="https://wa.me/8801725556272" target="_blank" class="whatsapp-float" aria-label="Support WhatsApp">
+    💬
+  </a>
+
+  <!-- Mobile Bottom Sticky ORDER NOW Helper -->
+  <div class="mobile-sticky-order-bar" id="mobile-sticky-order-bar">
+    <button class="mobile-sticky-btn" id="mobile-sticky-btn">
+      🛒 Order Now (Cash on Delivery)
+    </button>
+  </div>
+
+  <script src="app.js?v=3.0"></script>
+</body>
+</html>

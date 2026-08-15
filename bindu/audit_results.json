@@ -1,0 +1,2146 @@
+{
+  "endpoints": [
+    {
+      "method": "GET",
+      "endpoint": "/api/account/affiliate",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\affiliate\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/account/affiliate",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\affiliate\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/account/loyalty",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\loyalty\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/account/orders",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\orders\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/account/profile",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\profile\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/account/referral",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\referral\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/account/returns",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\returns\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/account/store-credit",
+      "file": "d:\\AI\\axionwear\\app\\api\\account\\store-credit\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/affiliates",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\affiliates\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/affiliates",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\affiliates\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/affiliates/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\affiliates\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/affiliates/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\affiliates\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/analytics/cohorts",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\analytics\\cohorts\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/analytics/products",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\analytics\\products\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/analytics/search",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\analytics\\search\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/auto-discounts",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\auto-discounts\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/auto-discounts",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\auto-discounts\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/auto-discounts/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\auto-discounts\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/auto-discounts/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\auto-discounts\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/blog",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\blog\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/blog",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\blog\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/blog/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\blog\\[id]\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/blog/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\blog\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/blog/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\blog\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/booking-services",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\booking-services\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/booking-services",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\booking-services\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/booking-services/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\booking-services\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/booking-services/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\booking-services\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/bookings",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bookings\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/bookings/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bookings\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/bookings/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bookings\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/brands",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\brands\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/brands",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\brands\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/brands/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\brands\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/brands/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\brands\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/bundles",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bundles\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/bundles",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bundles\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/bundles/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bundles\\[id]\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/bundles/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bundles\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/bundles/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\bundles\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/campaigns",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\campaigns\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/campaigns",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\campaigns\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/campaigns/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\campaigns\\[id]\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/campaigns/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\campaigns\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/campaigns/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\campaigns\\[id]\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/campaigns/[id]/send",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\campaigns\\[id]\\send\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/categories",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\categories\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/categories",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\categories\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/categories/[id]/config",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\categories\\[id]\\config\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/categories/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\categories\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/categories/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\categories\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/checkout-fields",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\checkout-fields\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/checkout-fields",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\checkout-fields\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/checkout-fields/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\checkout-fields\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/checkout-fields/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\checkout-fields\\[id]\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/contact/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\contact\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/coupon-rules",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\coupon-rules\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/coupon-rules",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\coupon-rules\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/coupons",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\coupons\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/coupons",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\coupons\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/coupons/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\coupons\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/coupons/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\coupons\\[id]\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/customers/import",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\customers\\import\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/customers/lock",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\customers\\lock\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/customers/risk",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\customers\\risk\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/customers/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\customers\\[id]\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/customers/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\customers\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/delivery",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\delivery\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/delivery/[orderId]/refresh",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\delivery\\[orderId]\\refresh\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/delivery-schedule",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\delivery-schedule\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/delivery-schedule",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\delivery-schedule\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/episodes",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\episodes\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/episodes",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\episodes\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/episodes/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\episodes\\[id]\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/episodes/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\episodes\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/episodes/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\episodes\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/expenses",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\expenses\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/expenses",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\expenses\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/expenses/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\expenses\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/expenses/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\expenses\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/export",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\export\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/flash-sales",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\flash-sales\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/flash-sales",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\flash-sales\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/flash-sales/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\flash-sales\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/flash-sales/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\flash-sales\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/gift-cards",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\gift-cards\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/gift-cards",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\gift-cards\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/gift-cards/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\gift-cards\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/gift-cards/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\gift-cards\\[id]\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/inventory/bulk",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\inventory\\bulk\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/inventory/[variantId]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\inventory\\[variantId]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/location-stock",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\location-stock\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/location-stock",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\location-stock\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/locations",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\locations\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/locations",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\locations\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/locations/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\locations\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/locations/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\locations\\[id]\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/loyalty/adjust",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\loyalty\\adjust\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/loyalty/customers",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\loyalty\\customers\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/memberships",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\memberships\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/memberships",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\memberships\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/memberships/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\memberships\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/memberships/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\memberships\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/order-bumps",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\order-bumps\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/order-bumps",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\order-bumps\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/order-bumps/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\order-bumps\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/order-bumps/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\order-bumps\\[id]\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/orders/bulk",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\bulk\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/orders/export",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\export\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/orders/manual",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\manual\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/orders/packing-slip",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\packing-slip\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/orders",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/orders/[id]/cod-note",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\cod-note\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/orders/[id]/delivery",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\delivery\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/orders/[id]/draft-to-order",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\draft-to-order\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/orders/[id]/items",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\items\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/orders/[id]/items",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\items\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/orders/[id]/items",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\items\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/orders/[id]/messages",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\messages\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/orders/[id]/messages",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\messages\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/orders/[id]/packing-slip",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\packing-slip\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/orders/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/orders/[id]/shipments",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\shipments\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/orders/[id]/shipments",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\shipments\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/orders/[id]/status",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\status\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/orders/[id]/tags",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\orders\\[id]\\tags\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/pages",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\pages\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/pages",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\pages\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/pages/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\pages\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/pages/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\pages\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/price-rules",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\price-rules\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/price-rules",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\price-rules\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/price-rules/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\price-rules\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/price-rules/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\price-rules\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/product-addons",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\product-addons\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/product-addons",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\product-addons\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/product-addons/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\product-addons\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/product-addons/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\product-addons\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/products/export",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\export\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/products/import",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\import\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/products",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/products",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/products/[id]/fbt",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\[id]\\fbt\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/products/[id]/fbt",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\[id]\\fbt\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/products/[id]/fbt",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\[id]\\fbt\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/products/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\[id]\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/products/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/products/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\products\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/purchase-orders",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\purchase-orders\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/purchase-orders",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\purchase-orders\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/purchase-orders/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\purchase-orders\\[id]\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/purchase-orders/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\purchase-orders\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/qa",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\qa\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/qa/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\qa\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/qa/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\qa\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/reports",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\reports\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/returns",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\returns\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/returns/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\returns\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/reviews",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\reviews\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/reviews/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\reviews\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/search",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\search\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/settings",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\settings\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/settings",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\settings\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/settings/staff",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\settings\\staff\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/settings/staff",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\settings\\staff\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/settings/staff/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\settings\\staff\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/settings/staff/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\settings\\staff\\[id]\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/settings/test-email",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\settings\\test-email\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/shipping-labels",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-labels\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/shipping-labels",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-labels\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/shipping-labels/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-labels\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/shipping-rates",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-rates\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/shipping-rates",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-rates\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/shipping-rates",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-rates\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/shipping-zones",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-zones\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/shipping-zones",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-zones\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/shipping-zones/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-zones\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/shipping-zones/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\shipping-zones\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/size-guide",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\size-guide\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/size-guide",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\size-guide\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/smart-collections",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\smart-collections\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/smart-collections",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\smart-collections\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/smart-collections/[id]/products",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\smart-collections\\[id]\\products\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/smart-collections/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\smart-collections\\[id]\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/smart-collections/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\smart-collections\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/smart-collections/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\smart-collections\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/stock-alerts",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\stock-alerts\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/store-credit",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\store-credit\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/store-credit",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\store-credit\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/subscriptions",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\subscriptions\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/suppliers",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\suppliers\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/suppliers",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\suppliers\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/admin/suppliers/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\suppliers\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/suppliers/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\suppliers\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/tags",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\tags\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/tags",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\tags\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/upload",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\upload\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/admin/workflows",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\workflows\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/admin/workflows",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\workflows\\route.ts"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/api/admin/workflows/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\workflows\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/admin/workflows/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\admin\\workflows\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/auth/callback",
+      "file": "d:\\AI\\axionwear\\app\\api\\auth\\callback\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/auth/register",
+      "file": "d:\\AI\\axionwear\\app\\api\\auth\\register\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/cron/abandoned-cart",
+      "file": "d:\\AI\\axionwear\\app\\api\\cron\\abandoned-cart\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/delivery/pathao/areas",
+      "file": "d:\\AI\\axionwear\\app\\api\\delivery\\pathao\\areas\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/delivery/pathao/create",
+      "file": "d:\\AI\\axionwear\\app\\api\\delivery\\pathao\\create\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/delivery/pathao/track",
+      "file": "d:\\AI\\axionwear\\app\\api\\delivery\\pathao\\track\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/feed/products.xml",
+      "file": "d:\\AI\\axionwear\\app\\api\\feed\\products.xml\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/payments/bkash/callback",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\bkash\\callback\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/bkash/create",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\bkash\\create\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/bkash/verify",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\bkash\\verify\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/payments/nagad/callback",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\nagad\\callback\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/nagad/create",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\nagad\\create\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/sslcommerz/cancel",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\sslcommerz\\cancel\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/sslcommerz/fail",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\sslcommerz\\fail\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/sslcommerz/init",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\sslcommerz\\init\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/sslcommerz/ipn",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\sslcommerz\\ipn\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/payments/sslcommerz/success",
+      "file": "d:\\AI\\axionwear\\app\\api\\payments\\sslcommerz\\success\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/products/[id]/reviews",
+      "file": "d:\\AI\\axionwear\\app\\api\\products\\[id]\\reviews\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/products/[id]/reviews",
+      "file": "d:\\AI\\axionwear\\app\\api\\products\\[id]\\reviews\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/search",
+      "file": "d:\\AI\\axionwear\\app\\api\\search\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/settings",
+      "file": "d:\\AI\\axionwear\\app\\api\\settings\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/abandoned-cart",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\abandoned-cart\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/affiliate-click",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\affiliate-click\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/apply-coupon",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\apply-coupon\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/auto-discount",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\auto-discount\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/bookings",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\bookings\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/bookings",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\bookings\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/brands",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\brands\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/checkout",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\checkout\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/contact",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\contact\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/deposit-check",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\deposit-check\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/download",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\download\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/draft-orders/[id]/confirm",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\draft-orders\\[id]\\confirm\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/funnel",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\funnel\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/gift-card/validate",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\gift-card\\validate\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/memberships",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\memberships\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/memberships/subscribe",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\memberships\\subscribe\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/order-bumps",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\order-bumps\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/orders/[id]/messages",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\orders\\[id]\\messages\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/orders/[id]/messages",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\orders\\[id]\\messages\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/payment-retry",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\payment-retry\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/product-qa",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\product-qa\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/product-views",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\product-views\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/qa",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\qa\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/qa",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\qa\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/referral",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\referral\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/returns",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\returns\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/reviews/helpful",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\reviews\\helpful\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/reviews",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\reviews\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/reviews",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\reviews\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/social-proof",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\social-proof\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/stock-alert",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\stock-alert\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/subscriptions",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\subscriptions\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/subscriptions",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\subscriptions\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/store/subscriptions",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\subscriptions\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/track-order",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\track-order\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/upload",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\upload\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/store/wishlist",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\wishlist\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/store/wishlist",
+      "file": "d:\\AI\\axionwear\\app\\api\\store\\wishlist\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/user/addresses",
+      "file": "d:\\AI\\axionwear\\app\\api\\user\\addresses\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/user/addresses",
+      "file": "d:\\AI\\axionwear\\app\\api\\user\\addresses\\route.ts"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/api/user/addresses/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\user\\addresses\\[id]\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/user/addresses/[id]",
+      "file": "d:\\AI\\axionwear\\app\\api\\user\\addresses\\[id]\\route.ts"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/api/user/wishlist",
+      "file": "d:\\AI\\axionwear\\app\\api\\user\\wishlist\\route.ts"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/api/user/wishlist",
+      "file": "d:\\AI\\axionwear\\app\\api\\user\\wishlist\\route.ts"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/api/user/wishlist",
+      "file": "d:\\AI\\axionwear\\app\\api\\user\\wishlist\\route.ts"
+    }
+  ],
+  "frontendCalls": [
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\affiliates\\AffiliatesClient.tsx",
+      "endpoint": "/api/admin/affiliates",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\affiliates\\AffiliatesClient.tsx",
+      "endpoint": "/api/admin/affiliates/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\analytics\\cohorts\\CohortClient.tsx",
+      "endpoint": "/api/admin/analytics/cohorts?topN=200",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\analytics\\products\\ProductAnalyticsClient.tsx",
+      "endpoint": "/api/admin/analytics/products?days=${period}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\auto-discounts\\AutoDiscountClient.tsx",
+      "endpoint": "/api/admin/auto-discounts",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\auto-discounts\\AutoDiscountClient.tsx",
+      "endpoint": "/api/admin/auto-discounts/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\auto-discounts\\AutoDiscountClient.tsx",
+      "endpoint": "/api/admin/auto-discounts/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\blog\\BlogAdminClient.tsx",
+      "endpoint": "/api/admin/blog/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bookings\\BookingsClient.tsx",
+      "endpoint": "/api/admin/bookings",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bookings\\BookingsClient.tsx",
+      "endpoint": "/api/admin/booking-services",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bookings\\BookingsClient.tsx",
+      "endpoint": "/api/admin/booking-services/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bookings\\BookingsClient.tsx",
+      "endpoint": "/api/admin/bookings/${editingBooking.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bookings\\BookingsClient.tsx",
+      "endpoint": "/api/admin/bookings/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\brands\\BrandsClient.tsx",
+      "endpoint": "/api/admin/brands",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\brands\\BrandsClient.tsx",
+      "endpoint": "/api/admin/brands/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\brands\\BrandsClient.tsx",
+      "endpoint": "/api/admin/brands/${b.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bundles\\BundleForm.tsx",
+      "endpoint": "/api/admin/bundles/${bundleId}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bundles\\BundleForm.tsx",
+      "endpoint": "/api/admin/products?search=${encodeURIComponent(search)}&limit=8",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bundles\\BundlesClient.tsx",
+      "endpoint": "/api/admin/bundles",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bundles\\BundlesClient.tsx",
+      "endpoint": "/api/admin/bundles/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bundles\\page.tsx",
+      "endpoint": "/api/admin/bundles",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bundles\\page.tsx",
+      "endpoint": "/api/admin/bundles/${b.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\bundles\\page.tsx",
+      "endpoint": "/api/admin/bundles/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\categories\\CategoryClient.tsx",
+      "endpoint": "/api/admin/categories/${catEditing.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\categories\\CategoryClient.tsx",
+      "endpoint": "/api/admin/categories",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\categories\\CategoryClient.tsx",
+      "endpoint": "/api/admin/categories/${c.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\categories\\CategoryClient.tsx",
+      "endpoint": "/api/admin/categories/${attrEditing.id}/config",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\checkout-fields\\CheckoutFieldsClient.tsx",
+      "endpoint": "/api/admin/checkout-fields",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\checkout-fields\\CheckoutFieldsClient.tsx",
+      "endpoint": "/api/admin/checkout-fields/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\checkout-fields\\CheckoutFieldsClient.tsx",
+      "endpoint": "/api/admin/checkout-fields/${f.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\contact\\ContactInbox.tsx",
+      "endpoint": "/api/admin/contact/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\contact\\ContactInbox.tsx",
+      "endpoint": "/api/admin/contact/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\coupons\\CouponClient.tsx",
+      "endpoint": "/api/admin/coupons/${editingId}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\coupons\\CouponClient.tsx",
+      "endpoint": "/api/admin/coupons",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\coupons\\CouponClient.tsx",
+      "endpoint": "/api/admin/coupon-rules",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\coupons\\CouponClient.tsx",
+      "endpoint": "/api/admin/coupons/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\coupons\\CouponClient.tsx",
+      "endpoint": "/api/admin/coupons/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\customers\\CustomerClient.tsx",
+      "endpoint": "/api/admin/customers/lock",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\customers\\import\\page.tsx",
+      "endpoint": "/api/admin/customers/import",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\delivery\\DeliveryClient.tsx",
+      "endpoint": "/api/admin/delivery/${orderId}/refresh",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\episodes\\EpisodeForm.tsx",
+      "endpoint": "/api/admin/episodes/${initialData!.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\episodes\\EpisodeTogglePublish.tsx",
+      "endpoint": "/api/admin/episodes/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\expenses\\ExpenseClient.tsx",
+      "endpoint": "/api/admin/expenses/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\export\\ExportClient.tsx",
+      "endpoint": "/api/admin/export?${params}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\flash-sales\\FlashSaleClient.tsx",
+      "endpoint": "/api/admin/flash-sales",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\flash-sales\\FlashSaleClient.tsx",
+      "endpoint": "/api/admin/flash-sales/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\flash-sales\\FlashSaleClient.tsx",
+      "endpoint": "/api/admin/flash-sales/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\gift-cards\\GiftCardsClient.tsx",
+      "endpoint": "/api/admin/gift-cards",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\gift-cards\\GiftCardsClient.tsx",
+      "endpoint": "/api/admin/gift-cards",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\gift-cards\\GiftCardsClient.tsx",
+      "endpoint": "/api/admin/gift-cards/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\inventory\\InventoryClient.tsx",
+      "endpoint": "/api/admin/inventory/bulk",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\inventory\\InventoryClient.tsx",
+      "endpoint": "/api/admin/inventory/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\locations\\LocationsClient.tsx",
+      "endpoint": "/api/admin/locations",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\locations\\LocationsClient.tsx",
+      "endpoint": "/api/admin/locations/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\loyalty\\LoyaltyClient.tsx",
+      "endpoint": "/api/admin/settings",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\loyalty\\LoyaltyClient.tsx",
+      "endpoint": "/api/admin/loyalty/adjust",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\memberships\\MembershipsClient.tsx",
+      "endpoint": "/api/admin/memberships",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\memberships\\MembershipsClient.tsx",
+      "endpoint": "/api/admin/memberships/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\memberships\\MembershipsClient.tsx",
+      "endpoint": "/api/admin/memberships/${p.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\order-bumps\\OrderBumpsClient.tsx",
+      "endpoint": "/api/admin/order-bumps",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\order-bumps\\OrderBumpsClient.tsx",
+      "endpoint": "/api/admin/order-bumps/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\order-bumps\\OrderBumpsClient.tsx",
+      "endpoint": "/api/admin/order-bumps/${b.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\orders\\OrdersBulkClient.tsx",
+      "endpoint": "/api/admin/orders/bulk",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\pages\\PageClient.tsx",
+      "endpoint": "/api/admin/pages/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\price-rules\\PriceRulesClient.tsx",
+      "endpoint": "/api/admin/price-rules",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\price-rules\\PriceRulesClient.tsx",
+      "endpoint": "/api/admin/price-rules/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\price-rules\\PriceRulesClient.tsx",
+      "endpoint": "/api/admin/price-rules/${r.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\products\\import\\ProductImportClient.tsx",
+      "endpoint": "/api/admin/products/import",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\qa\\page.tsx",
+      "endpoint": "/api/admin/qa?${params}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\qa\\page.tsx",
+      "endpoint": "/api/admin/qa/${selected.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\qa\\page.tsx",
+      "endpoint": "/api/admin/qa/${qa.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\qa\\page.tsx",
+      "endpoint": "/api/admin/qa/${qa.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\reports\\ReportsClient.tsx",
+      "endpoint": "/api/admin/reports?range=${range}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\returns\\ReturnsClient.tsx",
+      "endpoint": "/api/admin/returns/${selected.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\reviews\\ReviewsClient.tsx",
+      "endpoint": "/api/admin/reviews?status=${f}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\reviews\\ReviewsClient.tsx",
+      "endpoint": "/api/admin/reviews/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\settings\\SettingsClient.tsx",
+      "endpoint": "/api/admin/settings",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\settings\\SettingsClient.tsx",
+      "endpoint": "/api/admin/settings/test-email",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\settings\\SettingsClient.tsx",
+      "endpoint": "/api/admin/settings/staff",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\settings\\SettingsClient.tsx",
+      "endpoint": "/api/admin/settings/staff/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\settings\\SettingsClient.tsx",
+      "endpoint": "/api/admin/settings/staff/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\shipping-zones\\ShippingZoneClient.tsx",
+      "endpoint": "/api/admin/shipping-zones/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\smart-collections\\new\\page.tsx",
+      "endpoint": "/api/admin/smart-collections",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\smart-collections\\[id]\\page.tsx",
+      "endpoint": "/api/admin/smart-collections/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\smart-collections\\[id]\\page.tsx",
+      "endpoint": "/api/admin/smart-collections/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\store-credit\\StoreCreditClient.tsx",
+      "endpoint": "/api/admin/store-credit",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\store-credit\\StoreCreditClient.tsx",
+      "endpoint": "/api/admin/store-credit",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\suppliers\\SupplierClient.tsx",
+      "endpoint": "/api/admin/suppliers/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\workflows\\WorkflowsClient.tsx",
+      "endpoint": "/api/admin/workflows",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\workflows\\WorkflowsClient.tsx",
+      "endpoint": "/api/admin/workflows/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(admin)\\admin\\workflows\\WorkflowsClient.tsx",
+      "endpoint": "/api/admin/workflows/${w.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/orders",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/loyalty",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/store-credit",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/affiliate",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/referral",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/returns",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/store/returns",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/affiliate",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\account\\page.tsx",
+      "endpoint": "/api/account/profile",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\book\\[slug]\\BookingForm.tsx",
+      "endpoint": "/api/store/bookings",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\cart\\page.tsx",
+      "endpoint": "/api/settings",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\cart\\page.tsx",
+      "endpoint": "/api/store/auto-discount",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\cart\\page.tsx",
+      "endpoint": "/api/store/coupon",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\memberships\\MembershipsPageClient.tsx",
+      "endpoint": "/api/store/memberships/subscribe",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\order\\draft\\[id]\\DraftOrderClient.tsx",
+      "endpoint": "/api/store/draft-orders/${order.id}/confirm",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\register\\page.tsx",
+      "endpoint": "/api/auth/register",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\app\\(store)\\track\\page.tsx",
+      "endpoint": "/api/store/track-order",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\AdminTopbar.tsx",
+      "endpoint": "/api/admin/search?q=${encodeURIComponent(query)}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\CampaignComposer.tsx",
+      "endpoint": "/api/admin/campaigns",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\CampaignComposer.tsx",
+      "endpoint": "/api/admin/campaigns/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\CampaignComposer.tsx",
+      "endpoint": "/api/admin/campaigns/${id}/send",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\ImageUploadInput.tsx",
+      "endpoint": "/api/admin/upload",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\ManualOrderForm.tsx",
+      "endpoint": "/api/admin/products?search=${encodeURIComponent(search)}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\ManualOrderForm.tsx",
+      "endpoint": "/api/admin/customers/risk?phone=${encodeURIComponent(address.phone)}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\ManualOrderForm.tsx",
+      "endpoint": "/api/admin/orders/manual",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\NewPurchaseOrderForm.tsx",
+      "endpoint": "/api/admin/products?search=${encodeURIComponent(search)}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\NewPurchaseOrderForm.tsx",
+      "endpoint": "/api/admin/purchase-orders",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/cod-note",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/status",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/status",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${initialOrder.id}/messages",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/tags",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/tags",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/messages",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/delivery",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\OrderDetailsClient.tsx",
+      "endpoint": "/api/admin/orders/${order.id}/tags",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\ProductForm.tsx",
+      "endpoint": "/api/admin/upload",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\admin\\PurchaseOrderDetailsClient.tsx",
+      "endpoint": "/api/admin/purchase-orders/${po.id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\account\\AddressList.tsx",
+      "endpoint": "/api/user/addresses",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\account\\AddressList.tsx",
+      "endpoint": "/api/user/addresses/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\account\\AddressList.tsx",
+      "endpoint": "/api/user/addresses/${id}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CartDrawer.tsx",
+      "endpoint": "/api/store/order-bumps",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/user/addresses",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/store/deposit-check",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/store/apply-coupon",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/store/checkout",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/payments/bkash/create",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/payments/bkash/create",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/payments/nagad/create",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/payments/sslcommerz/init",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\CheckoutForm.tsx",
+      "endpoint": "/api/store/referral",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\ContactForm.tsx",
+      "endpoint": "/api/store/contact",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\FrequentlyBoughtTogether.tsx",
+      "endpoint": "/api/admin/products/${productId}/fbt",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\FrequentlyBoughtTogether.tsx",
+      "endpoint": "/api/store/cart",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\NotifyMeForm.tsx",
+      "endpoint": "/api/store/stock-alert",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\OrderMessages.tsx",
+      "endpoint": "/api/store/orders/${orderId}/messages",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\OrderMessages.tsx",
+      "endpoint": "/api/store/orders/${orderId}/messages",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\PostPurchaseUpsell.tsx",
+      "endpoint": "/api/store/order-bumps",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\ProductQA.tsx",
+      "endpoint": "/api/store/product-qa",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\RecentlyViewedTracker.tsx",
+      "endpoint": "/api/store/funnel",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\ReviewSection.tsx",
+      "endpoint": "/api/products/${productId}/reviews",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\ReviewSection.tsx",
+      "endpoint": "/api/store/upload",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\ReviewSection.tsx",
+      "endpoint": "/api/products/${productId}/reviews",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\SearchModal.tsx",
+      "endpoint": "/api/search?q=${encodeURIComponent(q)}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\components\\store\\SizeGuideModal.tsx",
+      "endpoint": "/api/admin/size-guide?categoryId=${categoryId}",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\store\\useCartStore.ts",
+      "endpoint": "/api/store/funnel",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\store\\useWishlistStore.ts",
+      "endpoint": "/api/user/wishlist",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\store\\useWishlistStore.ts",
+      "endpoint": "/api/user/wishlist",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\store\\useWishlistStore.ts",
+      "endpoint": "/api/user/wishlist",
+      "type": "fetch"
+    },
+    {
+      "file": "d:\\AI\\axionwear\\hooks\\useAbandonedCart.ts",
+      "endpoint": "/api/store/abandoned-cart",
+      "type": "fetch"
+    }
+  ]
+}

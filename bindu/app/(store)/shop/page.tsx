@@ -1,0 +1,283 @@
+import prisma from "@/lib/prisma"
+import PremiumProductCard from "@/components/premium/ProductCard"
+import { serialize } from "@/lib/utils"
+import Link from "next/link"
+import Image from "next/image"
+import { unstable_cache } from "next/cache"
+
+import { getActiveFlashSaleBatch, applyFlashSaleDiscount } from "@/lib/flashSale"
+import ShopFilters from "@/components/store/ShopFilters"
+import ShopTopControls from "@/components/store/ShopTopControls"
+import SearchTracker from "@/components/store/SearchTracker"
+
+// Sidebar data barely changes — cache for 5 minutes
+const getCachedSidebar = unstable_cache(
+  async () => {
+    const [categories, brands] = await Promise.all([
+      prisma.category.findMany({ where: { isActive: true } }).catch(() => []),
+      prisma.brand.findMany({ where: { isActive: true }, orderBy: { name: "asc" } }).catch(() => []),
+    ])
+    return { categories, brands }
+  },
+  ["shop-sidebar"],
+  { revalidate: 300 }
+)
+
+// Product listing cached per unique filter combination for 60 seconds
+const getCachedListing = unstable_cache(
+  async (whereStr: string, orderByStr: string, take: number) => {
+    const where = JSON.parse(whereStr)
+    const orderBy = JSON.parse(orderByStr)
+    const [products, totalProducts] = await Promise.all([
+      prisma.product.findMany({ where, include: { category: true, images: true, variants: true }, orderBy, take }).catch(() => []),
+      prisma.product.count({ where }).catch(() => 0),
+    ])
+    const productIds = products.map((p: any) => p.id)
+    const [flashEntries, reviewAggs] = await Promise.all([
+      getActiveFlashSaleBatch(products.map((p: any) => ({ id: p.id, categoryId: p.categoryId })))
+        .then(m => [...m.entries()]).catch(() => []),
+      prisma.review.groupBy({
+        by: ["productId"],
+        where: { productId: { in: productIds }, isApproved: true },
+        _avg: { rating: true },
+        _count: { rating: true },
+      }).catch(() => []),
+    ])
+    return { products, totalProducts, flashEntries, reviewAggs }
+  },
+  ["shop-listing"],
+  { revalidate: 60 }
+)
+
+import type { Metadata } from "next"
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string, categoryId?: string }>
+}): Promise<Metadata> {
+  const params = await searchParams
+  const categorySlug = params.categoryId || params.category || ""
+  
+  let title = "Shop All | Bindu Premium"
+  let description = "Browse our full collection of premium graphic tees, panjabis, and anime streetwear."
+  
+  if (categorySlug) {
+    const { categories } = await getCachedSidebar()
+    const activeCategory = categories.find((c: any) => c.slug === categorySlug)
+    if (activeCategory) {
+      title = `${activeCategory.name} | Bindu Premium`
+      description = activeCategory.description || `Shop the latest ${activeCategory.name} collection at Bindu Premium.`
+    }
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.bindupremiumbd.com"
+  const canonicalUrl = categorySlug 
+    ? `${siteUrl}/shop?category=${categorySlug}`
+    : `${siteUrl}/shop`
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    }
+  }
+}
+
+export default async function ShopPage({
+  searchParams,
+}: {
+  searchParams: Promise<{
+    categoryId?: string
+    category?: string
+    brandId?: string
+    size?: string
+    color?: string
+    sort?: string
+    take?: string
+    sale?: string
+    minPrice?: string
+    maxPrice?: string
+    search?: string
+    view?: string
+  }>
+}) {
+  const params = await searchParams
+  const categorySlug = params.categoryId || params.category || ""
+  const brandId = params.brandId || ""
+  const size = params.size || ""
+  const color = params.color || ""
+  const sort = params.sort || "newest"
+  const saleOnly = params.sale === "true"
+  const minPrice = params.minPrice || ""
+  const maxPrice = params.maxPrice || ""
+  const search = params.search || ""
+  const view = params.view || "grid"
+  const take = parseInt(params.take || "12")
+
+  let orderBy: any = { createdAt: "desc" }
+  if (sort === "price-asc") orderBy = { price: "asc" }
+  if (sort === "price-desc") orderBy = { price: "desc" }
+
+  // Resolve category slug → DB id (sidebar is cached, so this is cheap)
+  const { categories: sidebarCategories, brands } = await getCachedSidebar()
+  const activeCategory = categorySlug
+    ? sidebarCategories.find((c: any) => c.slug === categorySlug)
+    : null
+
+  const where: any = { isActive: true }
+  if (search) {
+    where.OR = [
+      { name: { contains: search, mode: "insensitive" } },
+      { description: { contains: search, mode: "insensitive" } },
+      { tags: { contains: search, mode: "insensitive" } },
+    ]
+  }
+  if (activeCategory) where.categoryId = activeCategory.id
+  if (brandId) where.brandId = brandId
+  if (saleOnly) where.comparePrice = { not: null }
+  if (minPrice || maxPrice) {
+    where.price = {}
+    if (minPrice) where.price.gte = Number(minPrice)
+    if (maxPrice) where.price.lte = Number(maxPrice)
+  }
+  if (size || color) {
+    where.variants = { some: {} }
+    if (size) where.variants.some.size = size
+    if (color) where.variants.some.color = color
+  }
+
+  const [{ products, totalProducts, flashEntries, reviewAggs }] = await Promise.all([
+    getCachedListing(JSON.stringify(where), JSON.stringify(orderBy), take),
+  ])
+  const categories = sidebarCategories
+
+  const hasMore = totalProducts > take
+  const flashSaleMap = new Map(flashEntries as [string, any][])
+  const reviewMap = Object.fromEntries(reviewAggs.map((r: any) => [r.productId, r]))
+
+  const current = { category: categorySlug, brandId, size, color, sort, view, minPrice, maxPrice, sale: params.sale || "", search, take: params.take || "12" }
+
+  return (
+    <div className="bg-bindu-light-grey min-h-screen animate-in fade-in duration-500">
+    <div className="container mx-auto px-4 py-8 md:py-12">
+      {search && <SearchTracker query={search} />}
+      {/* Top Bar */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-bindu-border-grey pb-6 mb-8 gap-4">
+        <div>
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-bindu-navy mb-2 uppercase tracking-tight">
+            {search ? `"${search}"` : activeCategory ? activeCategory.name : "Shop All"}
+          </h1>
+          <p className="text-xs uppercase tracking-widest text-bindu-text-muted">
+            {search ? `${totalProducts} result${totalProducts !== 1 ? "s" : ""}` : `Showing ${products.length} of ${totalProducts} products`}
+          </p>
+        </div>
+
+        <ShopTopControls current={current} />
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-10">
+        {/* Filters sidebar — handles both desktop (inline) and mobile (drawer) */}
+        <ShopFilters
+          categories={categories as any}
+          brands={brands as any}
+          current={current}
+        />
+
+        {/* Product Grid */}
+        <div className="flex-1">
+          {products.length === 0 ? (
+            <div className="py-20 text-center space-y-4 bg-bindu-white border border-bindu-border-grey">
+              <p className="text-bindu-text-muted">No products found matching your criteria.</p>
+              <Link
+                href="/shop"
+                className="inline-block px-6 py-2 bg-bindu-light-grey border border-bindu-border-grey hover:border-bindu-navy text-bindu-navy text-sm font-medium transition-colors"
+              >
+                Clear Filters
+              </Link>
+            </div>
+          ) : (
+            <>
+              {view === "list" ? (
+                <div className="flex flex-col gap-4">
+                  {serialize(products).map((product: any) => {
+                    const sale = flashSaleMap.get(product.id)
+                    const flashSalePrice = sale ? applyFlashSaleDiscount(Number(product.price), sale) : undefined
+                    const img = product.images?.[0]?.url || "/placeholder.svg"
+                    const displayPrice = flashSalePrice ?? Number(product.price)
+                    return (
+                      <Link key={product.id} href={`/shop/${product.slug}`} className="flex gap-5 border border-bindu-border-grey p-4 hover:border-bindu-navy transition-colors group bg-white">
+                        <div className="relative w-28 h-36 shrink-0 overflow-hidden bg-bindu-light-grey">
+                          <Image src={img} alt={product.name} fill sizes="112px" className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <div className="flex flex-col justify-between py-1 flex-1">
+                          <div>
+                            <p className="text-xs text-bindu-text-muted uppercase tracking-widest mb-1">{product.category?.name}</p>
+                            <h3 className="font-heading font-bold text-bindu-navy text-lg leading-tight line-clamp-2 hover:text-bindu-orange transition-colors">{product.name}</h3>
+                            {product.description && (
+                              <p className="text-sm text-bindu-text-muted mt-2 line-clamp-2">{product.description}</p>
+                            )}
+                          </div>
+                          <div className="flex items-center gap-3 mt-3">
+                            <span className="font-bold text-bindu-navy">৳{displayPrice.toLocaleString()}</span>
+                            {product.comparePrice && Number(product.comparePrice) > displayPrice && (
+                              <span className="text-sm text-bindu-text-muted line-through">৳{Number(product.comparePrice).toLocaleString()}</span>
+                            )}
+                            {sale && (
+                              <span className="text-xs bg-bindu-red/10 text-bindu-red font-semibold px-2 py-0.5">
+                                {sale.discountType === "PERCENTAGE" ? `${sale.discountValue}% off` : `৳${sale.discountValue} off`}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </Link>
+                    )
+                  })}
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 md:gap-x-8 md:gap-y-12">
+                  {serialize(products).map((product: any) => {
+                    const sale = flashSaleMap.get(product.id)
+                    const flashSalePrice = sale ? applyFlashSaleDiscount(Number(product.price), sale) : undefined
+                    return (
+                      <PremiumProductCard
+                        key={product.id}
+                        product={product}
+                        flashSalePrice={flashSalePrice}
+                        flashSaleLabel={
+                          sale
+                            ? sale.discountType === "PERCENTAGE"
+                              ? `${sale.discountValue}% off`
+                              : `৳${sale.discountValue} off`
+                            : undefined
+                        }
+                      />
+                    )
+                  })}
+                </div>
+              )}
+
+              {hasMore && (
+                <div className="mt-16 text-center border-t border-bindu-border-grey pt-8">
+                  <p className="text-xs text-bindu-text-muted uppercase tracking-widest mb-4">
+                    Showing {products.length} of {totalProducts}
+                  </p>
+                  <Link
+                    href={`/shop?take=${take + 12}${categorySlug ? `&category=${categorySlug}` : ""}${size ? `&size=${size}` : ""}${color ? `&color=${color}` : ""}${sort !== "newest" ? `&sort=${sort}` : ""}${minPrice ? `&minPrice=${minPrice}` : ""}${maxPrice ? `&maxPrice=${maxPrice}` : ""}${view !== "grid" ? `&view=${view}` : ""}`}
+                    scroll={false}
+                    className="inline-block px-12 py-3 bg-bindu-white border border-bindu-border-grey text-bindu-navy font-bold uppercase tracking-widest hover:border-bindu-navy hover:bg-bindu-navy hover:text-white transition-colors shadow-sm"
+                  >
+                    Load More
+                  </Link>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+    </div>
+  )
+}
+
