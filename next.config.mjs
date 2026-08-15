@@ -28,11 +28,6 @@ const nextConfig = {
         permanent: true,
         destination: '/category/:slug',
       },
-      {
-        source: '/lookbook',
-        permanent: true,
-        destination: '/episode',
-      },
     ]
   },
   async rewrites() {

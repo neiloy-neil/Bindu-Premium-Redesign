@@ -228,32 +228,40 @@ export default function PremiumHeader({
           </div>
 
           <nav className="flex-1 overflow-y-auto px-6 py-10 flex flex-col gap-8">
+            <Link href="/new-arrivals" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
+              New
+            </Link>
             <div className="flex flex-col gap-6">
               <button onClick={() => setShopOpen(!shopOpen)} className="flex items-center justify-between text-lg font-heading font-medium text-bindu-navy">
-                Shop <ChevronDown className={`w-5 h-5 transition-transform ${shopOpen ? "rotate-180" : ""}`} />
+                Shop Categories <ChevronDown className={`w-5 h-5 transition-transform ${shopOpen ? "rotate-180" : ""}`} />
               </button>
               {shopOpen && (
                 <div className="flex flex-col gap-4 pl-4 border-l border-bindu-border-grey">
-                  {navCategories.map(cat => (
-                    <Link key={cat.id} href={`/shop?category=${cat.slug}`} onClick={() => setMobileOpen(false)} className="text-sm font-bold uppercase tracking-widest text-bindu-text-muted hover:text-bindu-navy">
-                      {cat.name}
-                    </Link>
-                  ))}
-                  <Link href="/shop" onClick={() => setMobileOpen(false)} className="text-sm font-bold uppercase tracking-widest text-bindu-orange mt-2">
-                    All Products
-                  </Link>
+                  <Link href="/panjabi" onClick={() => setMobileOpen(false)} className="text-sm font-bold uppercase tracking-widest text-bindu-text-muted hover:text-bindu-navy">Panjabi</Link>
+                  <Link href="/polo" onClick={() => setMobileOpen(false)} className="text-sm font-bold uppercase tracking-widest text-bindu-text-muted hover:text-bindu-navy">Polo</Link>
+                  <Link href="/t-shirts" onClick={() => setMobileOpen(false)} className="text-sm font-bold uppercase tracking-widest text-bindu-text-muted hover:text-bindu-navy">T-Shirts</Link>
+                  <Link href="/shirts" onClick={() => setMobileOpen(false)} className="text-sm font-bold uppercase tracking-widest text-bindu-text-muted hover:text-bindu-navy">Shirts</Link>
+                  <Link href="/accessories" onClick={() => setMobileOpen(false)} className="text-sm font-bold uppercase tracking-widest text-bindu-text-muted hover:text-bindu-navy">Accessories</Link>
                 </div>
               )}
             </div>
-
-            <Link href="/quality" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
-              Quality
+            <Link href="/collections" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
+              Collections
             </Link>
-            <Link href="/lookbook" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
-              Lookbook
+            <Link href="/sale" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-orange">
+              Sale
             </Link>
-            <Link href="/our-story" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
-              Our Story
+            <Link href="/membership" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
+              Membership
+            </Link>
+            <Link href="/stores" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
+              Stores
+            </Link>
+            <Link href="/about" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
+              About
+            </Link>
+            <Link href="/contact" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
+              Contact
             </Link>
             <Link href="/login" onClick={() => setMobileOpen(false)} className="text-lg font-heading font-medium text-bindu-navy">
               Account
